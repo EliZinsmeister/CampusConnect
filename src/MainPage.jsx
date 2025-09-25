@@ -7,9 +7,28 @@ function mainPage() {
 
   return (
     <>
-      <div>
-        <button> I'm amazing</button>
-      </div>
+      <title>Sign Up/Log In </title>
+      <link rel="stylesheet" href="css.css" />
+
+      <body>
+        <h1>Sign Up or Log In</h1>
+        <table>
+          <tr>
+            <td>
+              <a href="SignUp">
+                <button>Sign Up</button>
+              </a>
+
+              <br></br>
+            </td>
+            <td>
+              <a href="LogIn">
+                <button>Log In</button>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </body>
     </>
   )
 }
