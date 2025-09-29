@@ -19,9 +19,9 @@ db.connect(err => {
   console.log('Connected to MySQL');
 });
 
-app.post('/register', (req, res) => {
-  const { name, email, mobile, address } = req.body;
-  db.query('INSERT INTO users SET ?', { name, email, mobile, address }, (err, result) => {
+app.post('/SignUp', (req, res) => {
+  const { name, email} = req.body;
+  db.query('INSERT INTO users SET ?', { name, email}, (err, result) => {
     if (err) throw err;
     res.send('User registered');
   });

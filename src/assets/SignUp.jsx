@@ -9,9 +9,7 @@ function signUp() {
     <>
      <body>
 
-        <form name ="SignUp" action="SignUpForm" method="POST">
-            <label> Name: </label> <input type ="text" name ="name"/>
-            <br />
+        <form name ="SignUp" action="SignUp" method="POST">
             <label> Username: </label> <input type ="text" name ="username"/>
             <br />
             <label> Password: </label><input type ="text" name ="password"/>
