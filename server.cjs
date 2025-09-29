@@ -19,12 +19,16 @@ db.connect(err => {
   console.log('Connected to MySQL');
 });
 
-app.post('/SignUp', (req, res) => {
+app.post('/SignUpForm', (req, res) => {
   const { name, email} = req.body;
   db.query('INSERT INTO users SET ?', { name, email}, (err, result) => {
     if (err) throw err;
     res.send('User registered');
   });
+});
+
+app.get('/SignUp', (req, res) => {
+    
 });
 
 app.get('/users', (req, res) => {
