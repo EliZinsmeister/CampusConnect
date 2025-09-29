@@ -94,9 +94,43 @@ input
     font-family: "Oxanium";
 }
 .center {
-  margin: auto;
-  width: 100%;
-  text-align: center;
-  padding: 10px;
   
+  text-align: center;
+  
+}
+
+/* Centering container for MainPage */
+.main-container {
+    min-height: 70vh; /* take up most of viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical center */
+    align-items: center; /* horizontal center */
+    gap: 1.5rem;
+    color: white;
+    padding: 2rem;
+    /* keep container from stretching full width and allow auto-centering in body flex layout */
+    max-width: 720px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-container .title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    font-size: 1.125rem;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
 }

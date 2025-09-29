@@ -1,35 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './MainPage.css'
 
 function MainPage() {
-
   return (
-    <>
+    <main className="main-container">
+      {/* title/link tags don't belong in component body; keep content for display only */}
+      <h1 className="title">Sign Up or Log In</h1>
 
-      <div class="center">
-        <title>Sign Up/Log In </title>
-        <link rel="stylesheet" href="css.css" />
-
-
-        <h1 class="center">Sign Up or Log In</h1>
-
-
-
-        <a href="SignUp" class="center">
-          <button class="center">Sign Up</button>
+      <div className="actions">
+        <a href="SignUp">
+          <button className="action-btn">Sign Up</button>
         </a>
 
-        <br></br>
-
-
-        <a href="LogIn" class="center">
-          <button class="center">Log In</button>
+        <a href="LogIn">
+          <button className="action-btn">Log In</button>
         </a>
       </div>
-
-    </>
+    </main>
   )
 }
 
