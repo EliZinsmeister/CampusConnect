@@ -28,7 +28,7 @@ app.post('/SignUpForm', (req, res) => {
 });
 
 app.get('/SignUp', (req, res) => {
-    
+  
 });
 
 app.get('/users', (req, res) => {
